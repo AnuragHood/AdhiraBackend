@@ -1,21 +1,184 @@
-2019-06-07 10:01:34.082  INFO 11568 --- [main] e.adhira.adhira.AdhiraApplicationTests   : Starting AdhiraApplicationTests on Anurag with PID 11568 (started by ritesh in C:\Users\ritesh\Documents\Adhira\adhira\adhira)
-2019-06-07 10:01:34.097  INFO 11568 --- [main] e.adhira.adhira.AdhiraApplicationTests   : No active profile set, falling back to default profiles: default
-2019-06-07 10:01:36.602  INFO 11568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-06-07 10:01:36.664  INFO 11568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
-2019-06-07 10:01:37.742  INFO 11568 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b8f1e1ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-06-07 10:01:38.727  INFO 11568 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-06-07 10:01:38.899  INFO 11568 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
-2019-06-07 10:01:39.258  INFO 11568 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-06-07 10:01:39.696  INFO 11568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-06-07 10:01:39.711  WARN 11568 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2019-06-07 10:01:42.492  INFO 11568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-06-07 10:01:42.649  INFO 11568 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2019-06-07 10:01:45.946  INFO 11568 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-06-07 10:01:45.946  INFO 11568 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-06-07 10:01:47.352  WARN 11568 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-06-07 10:01:48.551  INFO 11568 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-07 10:01:49.801  INFO 11568 --- [main] e.adhira.adhira.AdhiraApplicationTests   : Started AdhiraApplicationTests in 17.157 seconds (JVM running for 22.809)
-2019-06-07 10:01:50.983  INFO 11568 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-07 10:01:50.983  INFO 11568 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-06-07 10:01:50.983  INFO 11568 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-06-07 10:01:51.061  INFO 11568 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-06-19 00:28:36.846  INFO 22120 --- [main] edu.adhira.adhira.AdhiraApplication      : Starting AdhiraApplication on dappawsw039 with PID 22120 (C:\Users\pathaka\Documents\Personal\Adhira\AdhiraBackend\target\classes started by pathaka in C:\Users\pathaka\Documents\Personal\Adhira\AdhiraBackend)
+2019-06-19 00:28:36.858  INFO 22120 --- [main] edu.adhira.adhira.AdhiraApplication      : No active profile set, falling back to default profiles: default
+2019-06-19 00:28:37.749  INFO 22120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-19 00:28:37.830  INFO 22120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 2 repository interfaces.
+2019-06-19 00:28:38.118  INFO 22120 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5b1ee4d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 00:28:38.381  INFO 22120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-19 00:28:38.390  INFO 22120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-19 00:28:38.391  INFO 22120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-19 00:28:38.487  INFO 22120 --- [main] o.a.c.c.C.[.[localhost].[/adhira]        : Initializing Spring embedded WebApplicationContext
+2019-06-19 00:28:38.488  INFO 22120 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1546 ms
+2019-06-19 00:28:38.665  INFO 22120 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-06-19 00:28:38.734  INFO 22120 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.3.Final}
+2019-06-19 00:28:38.877  INFO 22120 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-06-19 00:28:39.060  INFO 22120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-06-19 00:28:39.338  INFO 22120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-06-19 00:28:39.351  INFO 22120 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-06-19 00:28:39.516  WARN 22120 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name seq
+2019-06-19 00:28:40.828  INFO 22120 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-06-19 00:28:40.831  INFO 22120 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-19 00:28:41.246  WARN 22120 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-19 00:28:41.376  INFO 22120 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-19 00:28:41.593  INFO 22120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/adhira'
+2019-06-19 00:28:41.595  INFO 22120 --- [main] edu.adhira.adhira.AdhiraApplication      : Started AdhiraApplication in 5.25 seconds (JVM running for 6.016)
+2019-06-19 00:29:44.691  INFO 10152 --- [main] edu.adhira.adhira.AdhiraApplication      : Starting AdhiraApplication on dappawsw039 with PID 10152 (C:\Users\pathaka\Documents\Personal\Adhira\AdhiraBackend\target\classes started by pathaka in C:\Users\pathaka\Documents\Personal\Adhira\AdhiraBackend)
+2019-06-19 00:29:44.696  INFO 10152 --- [main] edu.adhira.adhira.AdhiraApplication      : No active profile set, falling back to default profiles: default
+2019-06-19 00:29:45.498  INFO 10152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-19 00:29:45.579  INFO 10152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 2 repository interfaces.
+2019-06-19 00:29:45.887  INFO 10152 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d6cff22b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 00:29:46.148  INFO 10152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-19 00:29:46.158  INFO 10152 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-19 00:29:46.158  INFO 10152 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-19 00:29:46.258  INFO 10152 --- [main] o.a.c.c.C.[.[localhost].[/adhira]        : Initializing Spring embedded WebApplicationContext
+2019-06-19 00:29:46.258  INFO 10152 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1501 ms
+2019-06-19 00:29:46.432  INFO 10152 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-06-19 00:29:46.501  INFO 10152 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.3.Final}
+2019-06-19 00:29:46.645  INFO 10152 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-06-19 00:29:46.838  INFO 10152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-06-19 00:29:47.113  INFO 10152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-06-19 00:29:47.126  INFO 10152 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-06-19 00:29:47.295  WARN 10152 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name seq
+2019-06-19 00:29:48.269  INFO 10152 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-06-19 00:29:48.273  INFO 10152 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-19 00:29:48.688  WARN 10152 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-19 00:29:48.818  INFO 10152 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-19 00:29:49.035  INFO 10152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/adhira'
+2019-06-19 00:29:49.039  INFO 10152 --- [main] edu.adhira.adhira.AdhiraApplication      : Started AdhiraApplication in 4.867 seconds (JVM running for 5.622)
+2019-06-19 00:38:24.185  INFO 10152 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/adhira]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-19 00:38:24.186  INFO 10152 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-19 00:38:24.196  INFO 10152 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-06-19 00:38:24.330  INFO 10152 --- [http-nio-8080-exec-2] e.a.adhira.controller.LoginController    : inside Login get method fsfdaasfafaf@gmail.com
+2019-06-19 00:38:24.763  INFO 10152 --- [http-nio-8080-exec-2] e.a.adhira.controller.LoginController    : Login credencials matched
+2019-06-19 00:39:24.032  INFO 10152 --- [http-nio-8080-exec-5] e.a.adhira.controller.LoginController    : inside Registration get method User{id=0, email='anurag@gmail.com', password='P@ssion@01', name='Anurag', lastName='Pathak', active=0, roles=null}
+2019-06-19 00:39:24.214  INFO 10152 --- [http-nio-8080-exec-5] e.a.adhira.controller.LoginController    : registered successfully
+2019-06-19 00:39:40.331  INFO 10152 --- [http-nio-8080-exec-6] e.a.adhira.controller.LoginController    : inside Login get method anurag@gmail.com
+2019-06-19 00:39:40.446  INFO 10152 --- [http-nio-8080-exec-6] e.a.adhira.controller.LoginController    : Login credencials matched
+2019-06-19 00:40:32.536  INFO 10152 --- [http-nio-8080-exec-7] e.a.adhira.controller.LoginController    : inside Registration get method User{id=0, email='anurag@gmail1.com', password='P@ssion@01', name='Anurag', lastName='Pathak', active=0, roles=null}
+2019-06-19 00:40:32.658  INFO 10152 --- [http-nio-8080-exec-7] e.a.adhira.controller.LoginController    : registered successfully
+2019-06-19 00:40:55.282  INFO 10152 --- [http-nio-8080-exec-8] e.a.adhira.controller.LoginController    : inside Login get method anurag@gmail1.com
+2019-06-19 00:40:55.397  INFO 10152 --- [http-nio-8080-exec-8] e.a.adhira.controller.LoginController    : Login credencials matched
+2019-06-19 00:44:33.519  INFO 5568 --- [main] edu.adhira.adhira.AdhiraApplication      : Starting AdhiraApplication on dappawsw039 with PID 5568 (C:\Users\pathaka\Documents\Personal\Adhira\AdhiraBackend\target\classes started by pathaka in C:\Users\pathaka\Documents\Personal\Adhira\AdhiraBackend)
+2019-06-19 00:44:33.523  INFO 5568 --- [main] edu.adhira.adhira.AdhiraApplication      : No active profile set, falling back to default profiles: default
+2019-06-19 00:44:34.516  INFO 5568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-19 00:44:34.599  INFO 5568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 2 repository interfaces.
+2019-06-19 00:44:34.890  INFO 5568 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$51b3ea3d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 00:44:35.153  INFO 5568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-19 00:44:35.162  INFO 5568 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-19 00:44:35.162  INFO 5568 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-19 00:44:35.263  INFO 5568 --- [main] o.a.c.c.C.[.[localhost].[/adhira]        : Initializing Spring embedded WebApplicationContext
+2019-06-19 00:44:35.264  INFO 5568 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1681 ms
+2019-06-19 00:44:35.442  INFO 5568 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-06-19 00:44:35.511  INFO 5568 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.3.Final}
+2019-06-19 00:44:35.655  INFO 5568 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-06-19 00:44:35.843  INFO 5568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-06-19 00:44:36.125  INFO 5568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-06-19 00:44:36.139  INFO 5568 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-06-19 00:44:36.306  WARN 5568 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name seq
+2019-06-19 00:44:37.433  INFO 5568 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-06-19 00:44:37.437  INFO 5568 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-19 00:44:37.850  WARN 5568 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-19 00:44:37.978  INFO 5568 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-19 00:44:38.195  INFO 5568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/adhira'
+2019-06-19 00:44:38.199  INFO 5568 --- [main] edu.adhira.adhira.AdhiraApplication      : Started AdhiraApplication in 5.133 seconds (JVM running for 5.859)
+2019-06-19 00:45:20.502  INFO 5568 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/adhira]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-19 00:45:20.503  INFO 5568 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-19 00:45:20.512  INFO 5568 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-06-19 00:45:20.626  INFO 5568 --- [http-nio-8080-exec-1] e.a.adhira.controller.LoginController    : inside Login get method anurag@gmail1.com
+2019-06-19 00:45:20.938  INFO 5568 --- [http-nio-8080-exec-1] e.adhira.adhira.service.AuthServiceImpl  : Passwoprd for login P@ssion@01
+2019-06-19 00:45:21.053  INFO 5568 --- [http-nio-8080-exec-1] e.adhira.adhira.service.AuthServiceImpl  : Passwoprd  encoded $2a$10$O2K6vuPuVj3Y3ta.UYTwde24A9Lvr920J7MgfgYwLg/XwSb/IQFNK
+2019-06-19 00:45:21.161  INFO 5568 --- [http-nio-8080-exec-1] e.a.adhira.controller.LoginController    : Login credencials matched
+2019-06-19 00:46:54.024  INFO 24508 --- [main] edu.adhira.adhira.AdhiraApplication      : Starting AdhiraApplication on dappawsw039 with PID 24508 (C:\Users\pathaka\Documents\Personal\Adhira\AdhiraBackend\target\classes started by pathaka in C:\Users\pathaka\Documents\Personal\Adhira\AdhiraBackend)
+2019-06-19 00:46:54.029  INFO 24508 --- [main] edu.adhira.adhira.AdhiraApplication      : No active profile set, falling back to default profiles: default
+2019-06-19 00:46:54.852  INFO 24508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-19 00:46:54.929  INFO 24508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67ms. Found 2 repository interfaces.
+2019-06-19 00:46:55.206  INFO 24508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$900c4319] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 00:46:55.484  INFO 24508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-19 00:46:55.494  INFO 24508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-19 00:46:55.494  INFO 24508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-19 00:46:55.612  INFO 24508 --- [main] o.a.c.c.C.[.[localhost].[/adhira]        : Initializing Spring embedded WebApplicationContext
+2019-06-19 00:46:55.612  INFO 24508 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1500 ms
+2019-06-19 00:46:55.792  INFO 24508 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-06-19 00:46:55.865  INFO 24508 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.3.Final}
+2019-06-19 00:46:56.011  INFO 24508 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-06-19 00:46:56.167  INFO 24508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-06-19 00:46:56.445  INFO 24508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-06-19 00:46:56.458  INFO 24508 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-06-19 00:46:56.629  WARN 24508 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name seq
+2019-06-19 00:46:57.438  INFO 24508 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-06-19 00:46:57.442  INFO 24508 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-19 00:46:57.861  WARN 24508 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-19 00:46:57.990  INFO 24508 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-19 00:46:58.206  INFO 24508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/adhira'
+2019-06-19 00:46:58.209  INFO 24508 --- [main] edu.adhira.adhira.AdhiraApplication      : Started AdhiraApplication in 4.702 seconds (JVM running for 5.476)
+2019-06-19 00:47:27.209  INFO 24508 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/adhira]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-19 00:47:27.210  INFO 24508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-19 00:47:27.219  INFO 24508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-06-19 00:47:27.379  INFO 24508 --- [http-nio-8080-exec-2] e.a.adhira.controller.LoginController    : inside Login get method anurag@gmail.com
+2019-06-19 00:47:27.682  INFO 24508 --- [http-nio-8080-exec-2] e.adhira.adhira.service.AuthServiceImpl  : Passwoprd for login P@ssion@01
+2019-06-19 00:47:27.799  INFO 24508 --- [http-nio-8080-exec-2] e.a.adhira.controller.LoginController    : Login credencials matched
+2019-06-19 00:49:26.771  INFO 3568 --- [main] edu.adhira.adhira.AdhiraApplication      : Starting AdhiraApplication on dappawsw039 with PID 3568 (C:\Users\pathaka\Documents\Personal\Adhira\AdhiraBackend\target\classes started by pathaka in C:\Users\pathaka\Documents\Personal\Adhira\AdhiraBackend)
+2019-06-19 00:49:26.778  INFO 3568 --- [main] edu.adhira.adhira.AdhiraApplication      : No active profile set, falling back to default profiles: default
+2019-06-19 00:49:27.625  INFO 3568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-19 00:49:27.707  INFO 3568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 2 repository interfaces.
+2019-06-19 00:49:27.995  INFO 3568 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$26a4412f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 00:49:28.258  INFO 3568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-19 00:49:28.267  INFO 3568 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-19 00:49:28.268  INFO 3568 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-19 00:49:28.364  INFO 3568 --- [main] o.a.c.c.C.[.[localhost].[/adhira]        : Initializing Spring embedded WebApplicationContext
+2019-06-19 00:49:28.364  INFO 3568 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1458 ms
+2019-06-19 00:49:28.540  INFO 3568 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-06-19 00:49:28.611  INFO 3568 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.3.Final}
+2019-06-19 00:49:28.756  INFO 3568 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-06-19 00:49:28.941  INFO 3568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-06-19 00:49:29.220  INFO 3568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-06-19 00:49:29.233  INFO 3568 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-06-19 00:49:29.402  WARN 3568 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name seq
+2019-06-19 00:49:30.150  INFO 3568 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-06-19 00:49:30.153  INFO 3568 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-19 00:49:30.573  WARN 3568 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-19 00:49:30.702  INFO 3568 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-19 00:49:30.925  INFO 3568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/adhira'
+2019-06-19 00:49:30.928  INFO 3568 --- [main] edu.adhira.adhira.AdhiraApplication      : Started AdhiraApplication in 4.647 seconds (JVM running for 5.39)
+2019-06-19 00:49:56.377  INFO 3568 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/adhira]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-19 00:49:56.378  INFO 3568 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-19 00:49:56.387  INFO 3568 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-06-19 00:49:56.520  INFO 3568 --- [http-nio-8080-exec-2] e.a.adhira.controller.LoginController    : inside Login get method anurag@gmail1.com
+2019-06-19 00:49:56.823  INFO 3568 --- [http-nio-8080-exec-2] e.adhira.adhira.service.AuthServiceImpl  : Passwoprd for db query $2a$10$KaquAIit0EFxU3wrUW1G.OUj3WfMSiFOns1FaqdU2hWqQFhBP.Yxi
+2019-06-19 00:49:56.937  INFO 3568 --- [http-nio-8080-exec-2] e.adhira.adhira.service.AuthServiceImpl  : Passwoprd for login $2a$10$iUX0V5dfoCzpsTF5fyjDb.7XbCssq7nimNtKp72vXUZJLtuUZ8JXu
+2019-06-19 00:49:57.047  INFO 3568 --- [http-nio-8080-exec-2] e.a.adhira.controller.LoginController    : Login credencials matched
+2019-06-19 00:51:42.800  INFO 3568 --- [http-nio-8080-exec-5] e.a.adhira.controller.LoginController    : inside Login get method anurag@gmail1.com
+2019-06-19 00:51:42.805  INFO 3568 --- [http-nio-8080-exec-5] e.adhira.adhira.service.AuthServiceImpl  : Passwoprd for db query $2a$10$KaquAIit0EFxU3wrUW1G.OUj3WfMSiFOns1FaqdU2hWqQFhBP.Yxi
+2019-06-19 00:51:42.915  INFO 3568 --- [http-nio-8080-exec-5] e.adhira.adhira.service.AuthServiceImpl  : Passwoprd for login $2a$10$Hm92NV.EEf1B2ybIGdhrcuhN88p0eDnzUfF7OrI9Ri7XyFfskHByS
+2019-06-19 00:51:43.024  INFO 3568 --- [http-nio-8080-exec-5] e.a.adhira.controller.LoginController    : Login credencials matched
+2019-06-19 01:53:51.228  INFO 25240 --- [main] edu.adhira.adhira.AdhiraApplication      : Starting AdhiraApplication on dappawsw039 with PID 25240 (C:\Users\pathaka\Documents\Personal\Adhira\AdhiraBackend\target\classes started by pathaka in C:\Users\pathaka\Documents\Personal\Adhira\AdhiraBackend)
+2019-06-19 01:53:51.232  INFO 25240 --- [main] edu.adhira.adhira.AdhiraApplication      : No active profile set, falling back to default profiles: default
+2019-06-19 01:53:52.098  INFO 25240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-19 01:53:52.177  INFO 25240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69ms. Found 2 repository interfaces.
+2019-06-19 01:53:52.468  INFO 25240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d8ced69b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-19 01:53:52.746  INFO 25240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-19 01:53:52.755  INFO 25240 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-19 01:53:52.756  INFO 25240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-19 01:53:52.854  INFO 25240 --- [main] o.a.c.c.C.[.[localhost].[/adhira]        : Initializing Spring embedded WebApplicationContext
+2019-06-19 01:53:52.854  INFO 25240 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1566 ms
+2019-06-19 01:53:53.030  INFO 25240 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-06-19 01:53:53.099  INFO 25240 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.3.Final}
+2019-06-19 01:53:53.245  INFO 25240 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-06-19 01:53:53.432  INFO 25240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-06-19 01:53:53.711  INFO 25240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-06-19 01:53:53.725  INFO 25240 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-06-19 01:53:53.892  WARN 25240 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name seq
+2019-06-19 01:53:54.861  INFO 25240 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-06-19 01:53:54.865  INFO 25240 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-19 01:53:55.275  WARN 25240 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-19 01:53:55.404  INFO 25240 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-19 01:53:55.619  INFO 25240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/adhira'
+2019-06-19 01:53:55.622  INFO 25240 --- [main] edu.adhira.adhira.AdhiraApplication      : Started AdhiraApplication in 4.909 seconds (JVM running for 5.658)
+2019-06-19 01:54:14.494  INFO 25240 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/adhira]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-19 01:54:14.496  INFO 25240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-19 01:54:14.505  INFO 25240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-06-19 01:54:14.637  INFO 25240 --- [http-nio-8080-exec-3] e.a.adhira.controller.LoginController    : inside Login get method anurag@gmail1.com
+2019-06-19 01:54:15.300  INFO 25240 --- [http-nio-8080-exec-3] e.adhira.adhira.service.AuthServiceImpl  : Passwoprd for db query $2a$10$KaquAIit0EFxU3wrUW1G.OUj3WfMSiFOns1FaqdU2hWqQFhBP.Yxi
+2019-06-19 01:54:15.415  INFO 25240 --- [http-nio-8080-exec-3] e.adhira.adhira.service.AuthServiceImpl  : Passwoprd for login $2a$10$vnJpXj00j6Ga7RzwrUB1OuZMf9I.MVZ5nHQA6OKt3lZ5K3BGW94p6
+2019-06-19 01:54:15.633  INFO 25240 --- [http-nio-8080-exec-3] e.adhira.adhira.service.AuthServiceImpl  : Passwoprd  encoded $2a$10$h40BO6NyisJ1Z7z5n.9Ro.GCTD.lXGmJVRxaN7rsNO.8UG8WKOG3y
+2019-06-19 01:54:15.633  INFO 25240 --- [http-nio-8080-exec-3] e.adhira.adhira.service.AuthServiceImpl  : returning true
+2019-06-19 01:54:15.633  INFO 25240 --- [http-nio-8080-exec-3] e.a.adhira.controller.LoginController    : Login credencials matched

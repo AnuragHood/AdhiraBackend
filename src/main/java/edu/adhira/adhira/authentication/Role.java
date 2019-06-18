@@ -1,9 +1,12 @@
 package edu.adhira.adhira.authentication;
 
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+
 import javax.persistence.*;
 
 @Entity
-@Table(name = "role")
+@EnableAutoConfiguration
+@SequenceGenerator(name="seq", initialValue=14574, allocationSize=100)
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
