@@ -1,16 +1,14 @@
 package edu.adhira.adhira.authentication;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import org.hibernate.validator.constraints.Length;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 
 import javax.persistence.*;
-import javax.validation.constraints.*;
 import java.util.Set;
 
 @Entity
 @EnableAutoConfiguration
-@SequenceGenerator(name="seq", initialValue=357948, allocationSize=100)
+@SequenceGenerator(name = "seq", initialValue = 357948, allocationSize = 100)
 public class User {
 
     @Id
@@ -26,6 +24,10 @@ public class User {
     private String name;
 
     private String lastName;
+
+    private String gender;
+
+    private String phone;
 
     private int active;
     @ManyToMany(cascade = CascadeType.ALL)
@@ -88,6 +90,22 @@ public class User {
         this.roles = roles;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -96,6 +114,8 @@ public class User {
                 ", password='" + password + '\'' +
                 ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
+                ", gender='" + gender + '\'' +
+                ", phone='" + phone + '\'' +
                 ", active=" + active +
                 ", roles=" + roles +
                 '}';

@@ -5,6 +5,6 @@ import edu.adhira.adhira.authentication.User;
 
 public interface AuthService {
     User findByEmail(String email);
-    void saveUser(User user);
+    String saveUser(User user);
     boolean login(Login login);
 }

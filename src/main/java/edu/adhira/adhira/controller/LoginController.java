@@ -35,9 +35,9 @@ public class LoginController {
             return "EmailId Already Exist.";
 
         } else {
-            userService.saveUser(user);
-            logger.info("registered successfully");
-            return "You have been registered successfully";
+
+
+            return userService.saveUser(user);
         }
 
     }
