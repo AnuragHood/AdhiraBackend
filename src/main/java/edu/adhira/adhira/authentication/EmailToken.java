@@ -29,4 +29,47 @@ public class EmailToken {
         createdDate = new Date();
         confirmationToken = UUID.randomUUID().toString();
     }
+
+	public long getTokenid() {
+		return tokenid;
+	}
+
+	public void setTokenid(long tokenid) {
+		this.tokenid = tokenid;
+	}
+
+	public String getConfirmationToken() {
+		return confirmationToken;
+	}
+
+	public void setConfirmationToken(String confirmationToken) {
+		this.confirmationToken = confirmationToken;
+	}
+
+	public Date getCreatedDate() {
+		return createdDate;
+	}
+
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	@Override
+	public String toString() {
+		return "EmailToken [tokenid=" + tokenid + ", confirmationToken=" + confirmationToken + ", createdDate="
+				+ createdDate + ", user=" + user + "]";
+	}
+
+	public EmailToken() {
+		
+	}
+    
 }
