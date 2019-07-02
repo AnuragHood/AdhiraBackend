@@ -99,13 +99,12 @@ public class LoginController {
 		User user = userService.findByEmail(inquire);
 		if (user != null) {
 			userService.sendVerificationMail(user);
-			return "We found you..Check your mail to varify!!";
-		}
-		else {
+			return new String();
+		} else {
 			User userByMobile = userService.findByPhone(inquire);
-			if(userByMobile!=null) {
+			if (userByMobile != null) {
 				return userService.saveUser(userByMobile);
-				 	
+
 			}
 		}
 		return "Sorry!! W have'nt found you";

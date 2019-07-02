@@ -9,7 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 </head>
 <body style ="background-color:#9cafec">
-	<div style ="text-align:center;top:50%">
+	<div style ="text-align:center; top:40%; position: relative">
 	<p><b>${success}</b></p><br />
 	<a href ="http://localhost:4200"><b>Login</b></a>
 	<p><b>${failure}</b></p><br />

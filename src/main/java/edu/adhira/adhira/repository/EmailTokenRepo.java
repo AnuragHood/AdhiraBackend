@@ -18,5 +18,5 @@ public interface EmailTokenRepo extends CrudRepository<EmailToken, Long> {
     Date getTokenCreationDate(int userId);
     @Modifying
     @Query(value = "Delete FROM email_token where user_id=?", nativeQuery = true)
-    Date deleteToken(int userId);
+    void deleteToken(int userId);
 }

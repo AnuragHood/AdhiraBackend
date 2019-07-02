@@ -103,6 +103,7 @@ public class AuthServiceImpl implements AuthService {
 						String random = getRandomNumber();
 						saveOtp(new MobileOtp(user, random));
 						sendSMS(user, random);
+						return user.getId() + "";
 					} else {
 						return null;
 					}
@@ -123,7 +124,7 @@ public class AuthServiceImpl implements AuthService {
 				String random = getRandomNumber();
 				saveOtp(new MobileOtp(user, random));
 				sendSMS(user, random);
-				return "We found you..Check ur mobile to verify..";
+				return user.getId()+"";
 			}
 		} catch (Exception e) {
 			logger.info("Error in verification options:" + e.getMessage());
