@@ -33,6 +33,16 @@ public class User {
 	private String registrationMode;
 
 	private char active;
+	
+	private String image;
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
 
 	public String getRegistrationMode() {
 		return registrationMode;
@@ -122,6 +132,6 @@ public class User {
 	public String toString() {
 		return "User [id=" + id + ", email=" + email + ", password=" + password + ", name=" + name + ", lastName="
 				+ lastName + ", gender=" + gender + ", phone=" + phone + ", registrationMode=" + registrationMode
-				+ ", active=" + active + ", roles=" + roles + "]";
+				+ ", active=" + active + ", image=" + image + ", roles=" + roles + "]";
 	}
 }

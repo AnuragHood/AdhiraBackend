@@ -10,4 +10,5 @@ public interface AuthService {
     boolean login(Login login);
     void saveOtp(MobileOtp mobileAuth);
     User findByPhone(String phone);
+    
 }

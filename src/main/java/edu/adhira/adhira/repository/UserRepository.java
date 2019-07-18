@@ -8,16 +8,20 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository("userRepository")
-public interface UserRepository extends  CrudRepository<User, Long> {
-    User findByEmail(String email);
-    User findByPhone(String phone);
+public interface UserRepository extends CrudRepository<User, Long> {
+	User findByEmail(String email);
 
-    @Query(value = "SELECT password FROM user where email=?", nativeQuery = true)
-    String compPassword(String email);
-    @Modifying
-    @Query(value = "Update user set active =? where id=?", nativeQuery = true)
-	void setActiveInactiveUser(char activeInactive,int userId);
-    
+	User findByPhone(String phone);
 
+	@Query(value = "SELECT password FROM user where email=?", nativeQuery = true)
+	String compPassword(String email);
+
+	@Modifying
+	@Query(value = "Update user set active =? where id=?", nativeQuery = true)
+	void setActiveInactiveUser(char activeInactive, int userId);
+
+	@Query(value = "SELECT * FROM user where email=? OR name =? OR phone =?", nativeQuery = true)
+	User searchUser(String email,String name,String phone);
+	
 
 }

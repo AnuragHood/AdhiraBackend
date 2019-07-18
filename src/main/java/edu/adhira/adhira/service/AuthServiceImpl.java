@@ -124,7 +124,7 @@ public class AuthServiceImpl implements AuthService {
 				String random = getRandomNumber();
 				saveOtp(new MobileOtp(user, random));
 				sendSMS(user, random);
-				return user.getId()+"";
+				return user.getId() + "";
 			}
 		} catch (Exception e) {
 			logger.info("Error in verification options:" + e.getMessage());
@@ -156,14 +156,15 @@ public class AuthServiceImpl implements AuthService {
 			mailMessage.setTo(user.getEmail());
 			mailMessage.setSubject("Welcome to Adhira..Complete your  Registration!");
 			mailMessage.setFrom("Adhira!!");
-			mailMessage.setText("To confirm your account, please click here : "
-					+ "http://localhost:8080/adhira/confirm-account?token=" + confirmationToken.getConfirmationToken()
-					+ "&userId=" + user.getId());
+			mailMessage.setText("To confirm your account, please click below link : "
+					+ "<a href = http://localhost:8080/adhira/confirm-account?token="
+					+ confirmationToken.getConfirmationToken() + "&userId=" + user.getId() + ">"
+					+ "Verify your account!!</a>");
 
 			emailSenderService.sendEmail(mailMessage);
 			return true;
 		} catch (Exception e) {
-			logger.info("Problem in email verification" + e.getMessage());
+			logger.info("Problem in email verification " + e.getMessage());
 			return false;
 		}
 	}
@@ -208,7 +209,7 @@ public class AuthServiceImpl implements AuthService {
 
 	private String getRandomNumber() {
 		Random rand = new Random();
-		String randomNumber = String.format("%04d", (Object) Integer.valueOf(rand.nextInt(1001)));
+		String randomNumber = String.format("%d", (Object) Integer.valueOf(rand.nextInt(8452)));
 		return randomNumber;
 	}
 
@@ -221,5 +222,9 @@ public class AuthServiceImpl implements AuthService {
 	public User findByPhone(String phone) {
 
 		return userRepo.findByPhone(phone);
+	}
+
+	public User searchUser(String query) {
+		return userRepo.searchUser( query, query, query);
 	}
 }

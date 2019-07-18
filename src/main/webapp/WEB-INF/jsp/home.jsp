@@ -13,7 +13,17 @@
 	<p><b>${success}</b></p><br />
 	<a href ="http://localhost:4200"><b>Login</b></a>
 	<p><b>${failure}</b></p><br />
-	<a href ="http://localhost:4200"><b>Register</b></a>
+	<a href ="http://localhost:4200"><b>Register</b></a><br />
+	<c:if test="${newPass}==required"></c:if>
+	<form action="/action_page.php">
+  New Password:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Confirm Password:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
 	</div>
 </body>
 </html>

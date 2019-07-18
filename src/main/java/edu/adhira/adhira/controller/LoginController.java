@@ -94,20 +94,10 @@ public class LoginController {
 
 	@GetMapping(value = "/inquire")
 	@ResponseBody
-	public String inquireEmaiOrMobile(@RequestParam String inquire) {
+	public User inquireEmaiOrMobile(@RequestParam String inquire) {
 		logger.info("inside confirmOtp post method " + inquire);
-		User user = userService.findByEmail(inquire);
-		if (user != null) {
-			userService.sendVerificationMail(user);
-			return new String();
-		} else {
-			User userByMobile = userService.findByPhone(inquire);
-			if (userByMobile != null) {
-				return userService.saveUser(userByMobile);
-
-			}
-		}
-		return "Sorry!! W have'nt found you";
+		return userService.searchUser(inquire);
+		
 
 	}
 
