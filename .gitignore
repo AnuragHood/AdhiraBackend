@@ -27,3 +27,7 @@ HELP.md
 
 ### VS Code ###
 .vscode/
+/Logs/*.log
+/Logs/*.gz
+/Logs/*.log
+/Logs/*.gz
